@@ -29,6 +29,14 @@ Los requerimientos mínimos de esta sección son:
 
 Una vez completados estos puntos podéis modificar como consideréis el HTML para adaptarlo a lo que queréis que sea vuestro portfolio.
 
+### Recursos
+
+Para más información sobre HTML podéis consultar los siguientes enlaces:
+
+- [HTML: Lenguaje de etiquetas de hipertexto (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/HTML)
+- [HTML tags (W3Schools)](https://www.w3schools.com/TAgs/default.asp)
+- [HTML <img> Tag (W3Schools)](https://www.w3schools.com/tags/tag_img.asp)
+
 Al acabar, ¡volvemos a la presentación, toca ver CSS!
 
 ### **CSS**
@@ -40,6 +48,14 @@ Los requisitos para completar esta sección son los siguientes:
 - Ajustar las imágenes que hayáis seleccionado para que se vean correctamente, cambiando su tamaño (siempre desde CSS) o añadiéndoles alguna propiedad que os ayude a mostrar el contenido que queréis.
 - También podéis ajustar el espaciado entre los diferentes elementos de vuestra página para que encajen con el estilo que buscáis.
 
+### Recursos
+
+Os proporcionamos también algo de documentación extra:
+
+- [CSS (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/CSS)
+- [CSS colors (W3Schools)](https://www.w3schools.com/css/css_colors.asp)
+- [CSS Styling Images (W3Schools)](https://www.w3schools.com/css/css3_images.asp)
+
 Una vez acabemos, volvemos a la presentación para ver el último bloque: ¡JavaScript!
 
 ### **JavaScript**
@@ -49,6 +65,14 @@ Una vez acabemos, volvemos a la presentación para ver el último bloque: ¡Java
 En esta parte encontraréis ya hecho el menú "hamburguesa" para que, cuando el tamaño de la pantalla cambie, el menú superior desaparezca y puedan consultarse las secciones de la web con un menú desplegable. Podéis comentar este código e intentar hacerlo de cero, como una forma de poner en práctica los conocimientos que hemos visto hasta ahora, siguiendo nuestro ejemplo.
 
 Además, os proponemos como reto que, cuando un usuario pase el ratón por encima de la imagen de cabecera de la web, la imagen cambie por otra, o se anime de alguna forma. **PISTA**: Podéis tomar como ejemplo el código (tanto HTML, como CSS y JS) del bloque de la tubería por la que sale Mario en la plantilla.
+
+### Recursos
+
+Como documentación a consultar para empezar a conocer más información sobre JavaScript:
+
+- [JavaScript (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [JavaScript DOM (MDN Web docs)](https://developer.mozilla.org/es/docs/Glossary/DOM)
+- [element.classList() (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/API/Element/classList)
 
 ## ¡Subid vuestro resultado!
 
