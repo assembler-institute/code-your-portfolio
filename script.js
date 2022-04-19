@@ -12,7 +12,7 @@ function changeMarioDisplay() {
 
 /* FETCH DATA FROM API */
 
-async function fetchNewsCatcher(obj) {
+async function fetchNews(obj) {
   
   let options = {
     method: "GET",
@@ -23,21 +23,36 @@ async function fetchNewsCatcher(obj) {
   
   fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=6&lang=es", options)
     .then(response => response.json())
-    .then(data => obj(data))
+    .then(data => obj(data.articles))
     .catch(error => console.log(error));
   }
 
-  fetchNewsCatcher((data) => { // here we pass the data to the function
-    let jsondata = data.articles;
+//   function fetchNews(obj) {
+
+//   let options = {
+//     method: "GET",
+//     headers: {
+//       "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
+//   }
+// }
+
+//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=6&sortBy=publishedAt&language=es", options)
+//   .then(response => response.json())
+//   .then(data => obj(data.articles))
+//   .catch(error => console.log(error));
+// }
+
+  fetchNews((data) => { // here we pass the data to the function
+    let jsondata = data;
     console.log(jsondata);
     const newsContainer = document.getElementById("marioNews");
     Object.keys(jsondata).map(function(key, index) {
       if (index < 6) {
         let news = jsondata[index];
         let newsTitle = news.title;
-        let summary = news.summary;
-        let link = news.link;
-        let newsImage = news.media;
+        // let summary = news.summary;
+        let link = news.link || news.url;
+        let newsImage = news.media || news.urlToImage;
         newsContainer.innerHTML +=
         `<figure>
         <iframe width="auto" height="315" src="${newsImage}"
@@ -50,31 +65,6 @@ async function fetchNewsCatcher(obj) {
       }
     });
   });
-
-
-
-
-  // map each element from fetchNewsCatcher() to a variable
-
-
-
-
-// function fetchNewsApi() {
-
-//   let options = {
-//     method: "GET",
-//     headers: {
-//       "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
-//   }
-// }
-
-//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=6&sortBy=publishedAt&language=es", options)
-//     .then((response) => response.json())
-//     .then((json) => console.log(json));
-// }
-
-// console.log(fetchNewsApi());
-
 
 /* Copyright year */
 
