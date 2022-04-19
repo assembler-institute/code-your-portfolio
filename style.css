@@ -4,14 +4,12 @@
 
 /* General styles */
 
-/* Styles
----------------------------------*/
+/* Styles */
 body {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
-  /* color: #888888; */
   margin: 0;
 }
 
@@ -105,7 +103,6 @@ p {
 	user-select:none
 }
 .hamburger.is-active{
-
   background-color:none;
 }
 ._layer{
@@ -129,7 +126,7 @@ p {
 	-webkit-transform:translateY(100%);
 	-ms-transform:translateY(100%);
 	transform:translateY(100%);
-	}
+}
 .hamburger.is-active .-top{
 	-webkit-transform:translateY(200%) rotate(45deg) !important;
 	-ms-transform:translateY(200%) rotate(45deg) !important;
@@ -143,7 +140,6 @@ p {
 	-ms-transform:translateY(-200%) rotate(135deg) !important;
 	transform:translateY(-200%) rotate(135deg) !important;
 }
-
 .navbar.is_active{
   transform: translate3d(0px, 0px, 0px);
 }
@@ -161,7 +157,6 @@ p {
   width: 100%;
   z-index: 1001;
 }
-
 .navbar a{
   text-decoration:none;
   color: black;
@@ -508,6 +503,7 @@ figcaption {
 
 .submit-btn {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
   background-color: #000;

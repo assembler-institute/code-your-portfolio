@@ -1,4 +1,8 @@
-/*Pipe Mario*/
+/* 
+Pipe Mario
+
+Script encargado de que la pequeña animación del separador funcione.
+*/
 
 const pipe = document.getElementById("pipe");
 
@@ -23,28 +27,32 @@ function fetchFunction() {
     .then((json) => console.log(json));
 }
 
-/* Copyright year */
-
-document.getElementById("copyright-year").textContent =
-  new Date().getFullYear();
-
 /*Burger menu*/
-// selector
+// Selector
 var menu = document.querySelector(".hamburger");
 
-// method
+// Method
 function toggleMenu(event) {
   this.classList.toggle("is-active");
   document.querySelector(".navbar").classList.toggle("is_active");
   event.preventDefault();
 }
-// event
+
+// Event
 menu.addEventListener("click", toggleMenu, false);
 
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", submitForm);
 
+/*
+Function para el mensaje de feedback para saber que tu mensaje ha sido enviado.
+*/
 function submitForm(e) {
   e.preventDefault();
   alert("Your message has been sent to Mario");
 }
+
+/* Copyright year */
+
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();
