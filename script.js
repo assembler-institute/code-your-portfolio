@@ -41,14 +41,6 @@ function toggleMenu(event) {
 // event
 menu.addEventListener("click", toggleMenu, false);
 
-$(document).ready(function () {
-  $(".hamburger").click(function () {
-    $(".hamburger").toggleClass("is-active");
-    $(".menuresponsive").toggleClass("is-active");
-    return false;
-  });
-});
-
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", submitForm);
 

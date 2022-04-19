@@ -149,17 +149,17 @@ p {
 }
 .navbar{
   display: flex;
-   background-color: rgba(255, 255, 255, 0.95);
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    overflow-y: scroll;
-    position: fixed;
-    top: 0;
-    transform: translate3d(0px, -100%, 0px);
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    width: 100%;
-    z-index: 1001;
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  width: 100%;
+  z-index: 1001;
 }
 
 .navbar a{
@@ -284,12 +284,14 @@ p {
   margin-left: 40px;
   position: relative;
 }
+
 .message-item .message-inner {
   border: 1px solid #797979;
   border-radius: 3px;
   padding: 10px;
   position: relative;
 }
+
 .message-item .message-inner:before {
   border-right: 10px solid rgb(0, 0, 0);
   border-style: solid;
@@ -303,6 +305,7 @@ p {
   top: 6px;
   width: 0;
 }
+
 .message-item .message-inner:after {
   border-right: 10px solid #ffffff;
   border-style: solid;
@@ -532,10 +535,6 @@ figcaption {
 .link {
   color: #888;
   text-decoration: none;
-}
-
-.link::hover {
-  text-decoration: underline;
 }
 
 /* Media queries */
