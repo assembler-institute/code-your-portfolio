@@ -30,17 +30,25 @@ document.getElementById(
 ).textContent = new Date().getFullYear();
 
 /*Burger menu*/
-/*
-$(".burger").click(function() {
-    $(this).toggleClass('active');
-    $("ul.menu li").slideToggle('fast');
-})
+// selector
+var menu = document.querySelector('.hamburger');
 
-$(window).resize(function() {
-    if ($(window).width() > 650) {
-        $('ul.menu li').removeAttr('style');
-    }
-})*/
+// method
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( ".navbar" ).classList.toggle("is_active");
+  event.preventDefault();
+}
+// event
+menu.addEventListener('click', toggleMenu, false);
+
+$(document).ready(function(){
+	$('.hamburger').click(function() {
+		$('.hamburger').toggleClass('is-active');
+		$('.menuresponsive').toggleClass('is-active');
+		return false;
+	});
+});
 
 
 const submitBtn = document.getElementById("submit");
