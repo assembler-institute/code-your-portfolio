@@ -2,11 +2,8 @@
 
 const pipe = document.getElementById("pipe");
 
-const clickMe = document.getElementById("clickMe");
-
 pipe.addEventListener("mouseover", changeMarioDisplay);
 pipe.addEventListener("mouseout", changeMarioDisplay);
-clickMe.addEventListener("click", fetchFunction);
 
 function changeMarioDisplay() {
   const marioBehindPipe = document.getElementById("marioBehindPipe");
@@ -15,32 +12,69 @@ function changeMarioDisplay() {
 
 /* FETCH DATA FROM API */
 
-function fetchFunction() {
-  console.log("Hola");
-  //TODO Noticias
-  fetch("http://api.mediastack.com/v1/news?access_key=ec41cb210a6b426bd03c4f44f9f7fd03&keywords=mario%20nintendo&countries=es")
-    .then((response) => response.json())
-    .then((json) => {
-      const news = json.data;
-      console.log(news);
-      news.forEach((element) => {
-        const newsContainer = document.getElementById("marioNews");
-        const newsItem = document.createElement("div");
-        newsItem.innerHTML = `<h2>${element.title}</h2>
-        <p>${element.description}</p>
-        <p>${element.url}</p>
-        <p>${element.published_at}</p>
-        <p>${element.source}</p>
-        <p>${element.author}</p>
-        <p>${element.image}</p>
-        <p>${element.image_url}</p>
-        `;
-        newsContainer.appendChild(newsItem);
-      });
-    });
+async function fetchNewsCatcher(obj) {
+  
+  let options = {
+    method: "GET",
+    headers: {
+      "x-api-key": "5yIvBgJxKwX0ZSKuxMcK5ZVXXith43l-SNUXXhTiaU4"
+    }
+  }
+  
+  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=6&lang=es", options)
+    .then(response => response.json())
+    .then(data => obj(data))
+    .catch(error => console.log(error));
   }
 
-console.log(fetchFunction());
+  fetchNewsCatcher((data) => { // here we pass the data to the function
+    let jsondata = data.articles;
+    console.log(jsondata);
+    const newsContainer = document.getElementById("marioNews");
+    Object.keys(jsondata).map(function(key, index) {
+      if (index < 6) {
+        let news = jsondata[index];
+        let newsTitle = news.title;
+        let summary = news.summary;
+        let link = news.link;
+        let newsImage = news.media;
+        newsContainer.innerHTML +=
+        `<figure>
+        <iframe width="auto" height="315" src="${newsImage}"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <figcaption>${newsTitle}</figcaption>
+        ${link}
+      </figure>`;
+      }
+    });
+  });
+
+
+
+
+  // map each element from fetchNewsCatcher() to a variable
+
+
+
+
+// function fetchNewsApi() {
+
+//   let options = {
+//     method: "GET",
+//     headers: {
+//       "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
+//   }
+// }
+
+//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=6&sortBy=publishedAt&language=es", options)
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
+// }
+
+// console.log(fetchNewsApi());
+
 
 /* Copyright year */
 
