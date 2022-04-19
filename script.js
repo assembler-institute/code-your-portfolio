@@ -1,4 +1,8 @@
-/*Pipe Mario*/
+/* 
+Pipe Mario
+
+Script encargado de que la pequeña animación del separador funcione.
+*/
 
 const pipe = document.getElementById("pipe");
 
@@ -12,7 +16,8 @@ function changeMarioDisplay() {
 
 /* FETCH DATA FROM API */
 
-async function fetchNews(obj) {
+// option 1
+function fetchNews(obj) {
   
   let options = {
     method: "GET",
@@ -21,13 +26,14 @@ async function fetchNews(obj) {
     }
   }
   
-  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=6&lang=es", options)
+  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=9&lang=es", options)
     .then(response => response.json())
     .then(data => obj(data.articles))
     .catch(error => console.log(error));
   }
 
-//   function fetchNews(obj) {
+// option 2 (in case option 1 doesn't work)
+// function fetchNews(obj) {
 
 //   let options = {
 //     method: "GET",
@@ -36,60 +42,60 @@ async function fetchNews(obj) {
 //   }
 // }
 
-//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=6&sortBy=publishedAt&language=es", options)
+//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=9&sortBy=publishedAt&language=es", options)
 //   .then(response => response.json())
 //   .then(data => obj(data.articles))
 //   .catch(error => console.log(error));
 // }
 
+// Here we pass the arguments to the fetchNews function
   fetchNews((data) => { // here we pass the data to the function
     let jsondata = data;
     console.log(jsondata);
     const newsContainer = document.getElementById("marioNews");
-    Object.keys(jsondata).map(function(key, index) {
-      if (index < 6) {
-        let news = jsondata[index];
+    Object.keys(jsondata).map(function(key) {
+        let news = jsondata[key];
         let newsTitle = news.title;
         // let summary = news.summary;
         let link = news.link || news.url;
         let newsImage = news.media || news.urlToImage;
-        newsContainer.innerHTML +=
-        `<figure>
-        <iframe width="auto" height="315" src="${newsImage}"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <figcaption>${newsTitle}</figcaption>
-        ${link}
-      </figure>`;
-      }
+        newsContainer.innerHTML += `
+        <div class="container--news__image">
+          <a href="${link}" target="_blank">
+            <img src="${newsImage}" alt="${newsTitle}">
+            <p>${newsTitle}</p>
+          </a>
+        </div>
+        `;
     });
   });
 
-/* Copyright year */
-
-document.getElementById(
-  "copyright-year"
-).textContent = new Date().getFullYear();
-
 /*Burger menu*/
-/*
-$(".burger").click(function() {
-    $(this).toggleClass('active');
-    $("ul.menu li").slideToggle('fast');
-})
+// Selector
+var menu = document.querySelector(".hamburger");
 
-$(window).resize(function() {
-    if ($(window).width() > 650) {
-        $('ul.menu li').removeAttr('style');
-    }
-})*/
+// Method
+function toggleMenu(event) {
+  this.classList.toggle("is-active");
+  document.querySelector(".navbar").classList.toggle("is_active");
+  event.preventDefault();
+}
 
+// Event
+menu.addEventListener("click", toggleMenu, false);
 
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", submitForm);
 
+/*
+Function para el mensaje de feedback para saber que tu mensaje ha sido enviado.
+*/
 function submitForm(e) {
   e.preventDefault();
   alert("Your message has been sent to Mario");
 }
+
+/* Copyright year */
+
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();

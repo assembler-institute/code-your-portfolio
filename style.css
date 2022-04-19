@@ -4,14 +4,12 @@
 
 /* General styles */
 
-/* Styles
----------------------------------*/
+/* Styles */
 body {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
-  /* color: #888888; */
   margin: 0;
 }
 
@@ -63,6 +61,30 @@ p {
   color: #000;
 }
 
+.highlight {
+  background: rgba(255, 28, 3, 0.79);
+  color: #fff;
+  top: -1px;
+  left: -1px;
+  padding: 10px 3px 3px 10px;
+}
+.highlight_blur {
+  background: rgba(255, 28, 3, 0.79);
+  color: #fff;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+.m2 {
+  margin-right: 1rem;
+}
+.m4 {
+  margin-bottom: 2rem;
+}
+
 /* Nav Styles */
 
 .navbar {
@@ -84,113 +106,91 @@ p {
 }
 /*burger menu*/
 
-/*
-#burger-menu {
-	cursor: pointer;
-	height: 27px;
-	width: 27px;
-	margin: 50px;
-	overflow: visible;
-	position: relative;
-	z-index: 2;
-
-	// THE LINES
-	span,
-	span:before,
-	span:after {
-		background: #ccc;
-		display: block;
-		height: 2px;
-		opacity: 1;
-		position: absolute;
-		transition: 0.3s ease-in-out;
-	}
-
-	span:before,
-	span:after {
-		content: '';
-	}
-
-	// TOP
-	span:before {
-		left: 0px;
-		top: -10px;
-		width: 27px;
-	}
-
-	// MIDDLE
-	span {
-		right: 0px;
-		top: 13px;
-		width: 27px;
-	}
-
-	// BOTTOM
-	span:after {
-		left: 0px;
-		top: 10px;
-		width: 27px;
-	}
-
-	// ROTATION ON CLICK
-	&.close {
-		// TOP
-		span:before {
-			top: 0px;
-			transform: rotate(90deg);
-			width: 27px;
-		}
-
-		// MIDDLE
-		span {
-			transform: rotate(-45deg);
-			top: 13px;
-			width: 27px;
-		}
-
-		// BOTTOM
-		span:after {
-			top: 0px;
-			left: 0;
-			transform: rotate(90deg);
-			opacity: 0;
-			width: 0;
-		}
-	}
+@media (max-width: 768px) {
+  .hamburger {
+    position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    padding: 20px 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s
+      cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index: 1002;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamburger.is-active {
+    background-color: none;
+  }
+  ._layer {
+    background: #333333;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    width: 28px;
+    height: 4px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  }
+  .hamburger:hover .-top {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .hamburger:hover .-bottom {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .hamburger.is-active .-top {
+    -webkit-transform: translateY(200%) rotate(45deg) !important;
+    -ms-transform: translateY(200%) rotate(45deg) !important;
+    transform: translateY(200%) rotate(45deg) !important;
+  }
+  .hamburger.is-active .-mid {
+    opacity: 0;
+  }
+  .hamburger.is-active .-bottom {
+    -webkit-transform: translateY(-200%) rotate(135deg) !important;
+    -ms-transform: translateY(-200%) rotate(135deg) !important;
+    transform: translateY(-200%) rotate(135deg) !important;
+  }
+  .navbar.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .navbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar a:hover {
+    text-decoration: none;
+    color: #333;
+  }
 }
-
-#navbar {
-	z-index: 1;
-	min-width: 100%;
-	min-height: 100%;
-	position: fixed;
-	top: 0;
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	text-align: center;
-	padding-top: 20px;
-	transition: all 0.3s ease-in-out;
-
-	&.overlay {
-		visibility: visible;
-		opacity: 1;
-		padding-top: 100px;
-		background: rgba(0, 0, 0, 0.5);
-	}
-
-
-
-	a {
-		color: #fff;
-		display: block;
-		font-size: 32px;
-		margin-bottom: 30px;
-		text-decoration: none;
-	}
-}
-
-*/
 
 /* Top_content */
 
@@ -222,10 +222,6 @@ p {
   width: 32px;
   height: 32px;
   color: #00283a;
-}
-
-.m2 {
-  margin-right: 1rem;
 }
 
 /* About Me */
@@ -303,12 +299,14 @@ p {
   margin-left: 40px;
   position: relative;
 }
+
 .message-item .message-inner {
   border: 1px solid #797979;
   border-radius: 3px;
   padding: 10px;
   position: relative;
 }
+
 .message-item .message-inner:before {
   border-right: 10px solid rgb(0, 0, 0);
   border-style: solid;
@@ -322,6 +320,7 @@ p {
   top: 6px;
   width: 0;
 }
+
 .message-item .message-inner:after {
   border-right: 10px solid #ffffff;
   border-style: solid;
@@ -433,6 +432,40 @@ figcaption {
   text-transform: uppercase;
 }
 
+/* News */
+
+.container--news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem 4rem 2rem 4rem;
+  border-radius: 5px;
+}
+
+.container--news__image {
+  border: thin #b3b3b3 solid;
+}
+
+.container--news__image a {
+  background: rgb(255, 0, 0);
+}
+
+.container--news__image a > img {
+  /* cover image */
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.container--news__image p {
+  text-align: center;
+  margin: 0.5rem 1rem;
+  font-size: auto;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
 /* Contact Form */
 
 .container-form {
@@ -524,6 +557,7 @@ figcaption {
 
 .submit-btn {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
   background-color: #000;
@@ -553,16 +587,12 @@ figcaption {
   text-decoration: none;
 }
 
-.link::hover {
-  text-decoration: underline;
-}
-
 /* Media queries */
 
 @media screen and (max-width: 768px) {
   .navbar {
     /* display an icon instead of text */
-    display: none;
+    display: flex;
   }
 
   .container--header,
