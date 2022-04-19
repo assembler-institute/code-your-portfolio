@@ -18,10 +18,29 @@ function changeMarioDisplay() {
 function fetchFunction() {
   console.log("Hola");
   //TODO Noticias
-  fetch("https://jsonplaceholder.typicode.com/todos/1")
+  fetch("http://api.mediastack.com/v1/news?access_key=ec41cb210a6b426bd03c4f44f9f7fd03&keywords=mario%20nintendo&countries=es")
     .then((response) => response.json())
-    .then((json) => console.log(json));
-}
+    .then((json) => {
+      const news = json.data;
+      console.log(news);
+      news.forEach((element) => {
+        const newsContainer = document.getElementById("marioNews");
+        const newsItem = document.createElement("div");
+        newsItem.innerHTML = `<h2>${element.title}</h2>
+        <p>${element.description}</p>
+        <p>${element.url}</p>
+        <p>${element.published_at}</p>
+        <p>${element.source}</p>
+        <p>${element.author}</p>
+        <p>${element.image}</p>
+        <p>${element.image_url}</p>
+        `;
+        newsContainer.appendChild(newsItem);
+      });
+    });
+  }
+
+console.log(fetchFunction());
 
 /* Copyright year */
 
