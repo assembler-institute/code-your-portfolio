@@ -6,37 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./img/favicon.png" />
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/5a1c50331f.js" crossorigin="anonymous"></script>
-  <script defer src="./js/script.js"></script>
+  <script defer src="./script.js"></script>
 </head>
 
 <body>
+
   <!-- Navigation_section -->
-  <nav class="navbar" role="navigation">
-    <div><a href="#Home">Home</a></div>
-    <div><a href="#service">Skills</a></div>
-    <div><a href="#experience">Experience</a></div>
-    <div><a href="#portfolio">Projects</a></div>
-    <div><a href="#contact">Contact</a></div>
+  <div id="burger-menu">
+    <span></span>
+  </div>
+
+  <nav id='navbar' class="navbar" role="navigation">
+    <div><a class="menuItem" href="#Home">Home</a></div>
+    <div><a class="menuItem" href="#service">Skills</a></div>
+    <div><a class="menuItem" href="#experience">Experience</a></div>
+    <div><a class="menuItem" href="#portfolio">Projects</a></div>
+    <div><a class="menuItem" href="#contact">Contact</a></div>
   </nav>
+
+
   <!--Hero_Section-->
   <section id="Home" class="container--header">
     <div class="container--header__left">
         <h2 class="container-h2__right">
-          Soy Mario<br/>
-          <strong>Tu héroe de confianza</strong>
+          <strong>Soy Mario</strong>
         </h2>
         <p>
         He seguido los pasos de mi padre como carpintero.
         Siempre me he buscado la vida, en distintos trabajos, como camarero, doctor, fontanero.
         Pero siempre he sentido que lo que de verdad me gustaba era luchar por las injusticias,
-        con una sonrisa y junto a mis amigos como Luigi, Yosi.
+        con una sonrisa y junto a mis amigos como Luigi, Yoshi.
         Soy una persona ágil, proactiva, luchadora, con muchas ganas de crecer laboralmente.
         Actualmente, busco estabilidad laboral y posibilidad de trabajo en remoto.</p>
 
         <div class="social__links--container">
-              <img class="m2" src="./img/facebook.png" alt="facebook" />
+              <img id="clickMe" class="m2" src="./img/facebook.png" alt="facebook" />
               <img class="m2" src="./img/twitter.png" alt="twitter" />
               <img class="m2" src="./img/instagram.png" alt="instagram" />
               <img class="m2" src="./img/linkedin.png" alt="linkedin" />
@@ -246,11 +252,13 @@
               <input id="message" class="input-text js-input" type="text" required>
               <label class="label" for="message">Message</label>
            </div>
-           <div class="form-field col x-100 align-center">
-              <input class="submit-btn" type="submit" value="Submit">
-           </div>
+           <button id="submit" class="submit-btn">
+             Submit
+           </button>
         </form>
-        <div class="copyright">&copy; ASSEMBLER INSTITUTE OF TECHNOLOGY</div>
-     </section>
+      </section>
+      <footer>
+        <div class="copyright">&copy; ASSEMBLER INSTITUTE OF TECHNOLOGY, <span id="copyright-year"></span> <div>
+      </footer>
   </body>
 </html>
