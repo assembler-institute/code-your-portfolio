@@ -25,31 +25,29 @@ function fetchFunction() {
 
 /* Copyright year */
 
-document.getElementById(
-  "copyright-year"
-).textContent = new Date().getFullYear();
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();
 
 /*Burger menu*/
 // selector
-var menu = document.querySelector('.hamburger');
+var menu = document.querySelector(".hamburger");
 
 // method
-function toggleMenu (event) {
-  this.classList.toggle('is-active');
-  document.querySelector( ".navbar" ).classList.toggle("is_active");
+function toggleMenu(event) {
+  this.classList.toggle("is-active");
+  document.querySelector(".navbar").classList.toggle("is_active");
   event.preventDefault();
 }
 // event
-menu.addEventListener('click', toggleMenu, false);
+menu.addEventListener("click", toggleMenu, false);
 
-$(document).ready(function(){
-	$('.hamburger').click(function() {
-		$('.hamburger').toggleClass('is-active');
-		$('.menuresponsive').toggleClass('is-active');
-		return false;
-	});
+$(document).ready(function () {
+  $(".hamburger").click(function () {
+    $(".hamburger").toggleClass("is-active");
+    $(".menuresponsive").toggleClass("is-active");
+    return false;
+  });
 });
-
 
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", submitForm);
