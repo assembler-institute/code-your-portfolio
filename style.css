@@ -7,6 +7,7 @@
 /* Styles */
 body {
   background: #ffffff;
+  color: #232323;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -24,7 +25,6 @@ footer {
 
 h2 {
   font-size: 38px;
-  color: #232323;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   margin: 0px 0 25px 0;
@@ -39,14 +39,12 @@ h2 {
 h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  color: #000;
   font-size: 18px;
   margin: 0 0 15px 0;
 }
 
 h6 {
   font-size: 16px;
-  color: #000;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -57,25 +55,37 @@ h6 {
 p {
   text-align: justify;
   line-height: 24px;
-  margin: 0;
-  color: #000;
+}
+
+.red-bg{
+  background-color: red;
+  color:white;
 }
 
 .highlight {
-  background: rgba(255, 28, 3, 0.79);
-  color: #fff;
-  top: -1px;
-  left: -1px;
-  padding: 10px 3px 3px 10px;
+  color: rgb(255, 28, 3);
+  border: 6px solid red;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px auto;
 }
-.highlight_blur {
-  background: rgba(255, 28, 3, 0.79);
+
+.red-bg .highlight {
+  /*background: rgba(255, 28, 3, 0.79);
   color: #fff;
   transform: rotate(2deg);
   top: -1px;
   left: -1px;
   border-radius: 20% 25% 20% 24%;
-  padding: 10px 3px 3px 10px;
+  padding: 10px 3px 3px 10px;*/
+
+  color: white;
+  border: 6px solid white;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px auto;
 }
 
 .m2 {
@@ -197,7 +207,7 @@ p {
 .container--header {
   display: flex;
   flex-direction: row;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem;
 }
 
 .container--header__left {
@@ -210,6 +220,7 @@ p {
 }
 
 .container--header__right {
+  padding: 3em;
   width: 50%;
 }
 
@@ -231,7 +242,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 4rem 2rem 4rem;
+  padding: 3rem;
 }
 
 .container-first {
@@ -287,6 +298,10 @@ p {
 }
 
 /* Experience */
+
+.container-experience{
+  padding: 3rem;
+}
 
 .container-experience--schema {
   display: inline-block;
@@ -347,10 +362,10 @@ p {
 }
 
 .message-item:after {
-  background: #000000;
-  border: 2px solid #000000;
+  background: white;
+  border: 2px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px white;
   content: "";
   height: 15px;
   left: -36px;
@@ -378,7 +393,6 @@ p {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  color: #000;
 }
 
 .message-item .message-head .post-meta {
@@ -387,7 +401,7 @@ p {
 }
 
 .post-meta {
-  color: #777;
+  color: white;
   font-size: 12px;
   font-weight: bold;
   line-height: 22px;
@@ -399,12 +413,12 @@ p {
 
 /* Projects */
 
-.container--portfolio {
+.container-portfolio {
   display: flex;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 4rem;
+  padding: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -438,16 +452,18 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
-  margin: 2rem 4rem 2rem 4rem;
+  padding:3em;
   border-radius: 5px;
 }
 
 .container--news__image {
+  background-color: white;;
   border: thin #b3b3b3 solid;
 }
 
 .container--news__image a {
   background: rgb(255, 0, 0);
+  
 }
 
 .container--news__image a > img {
