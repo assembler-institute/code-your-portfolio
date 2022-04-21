@@ -46,6 +46,7 @@ h3 {
 p {
   text-align: justify;
   line-height: 24px;
+  font-size: 1.2em;
 }
 
 .bg-red{
@@ -69,13 +70,6 @@ p {
   width: fit-content;
   padding: 5px 10px;
   margin: 10px auto;
-}
-
-.m2 {
-  margin-right: 1rem;
-}
-.m4 {
-  margin-bottom: 2rem;
 }
 
 /* Nav Styles */
@@ -182,7 +176,7 @@ p {
 }
 
 .checks:before {
-  content: "\f132";
+  content: "\f005";
   font-family: FontAwesome;
   position: absolute;
   height: 2rem;
@@ -197,6 +191,18 @@ p {
   overflow: hidden;
   background-color: #e6e6e6;
   border-radius: 1rem;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(255, 201, 201);
 }
 
 /* Experience */
