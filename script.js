@@ -26,7 +26,7 @@ function fetchNews(obj) {
     }
   }
 
-  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=9&lang=es", options)
+  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=8&lang=es", options)
     .then(response => response.json())
     .then(data => obj(data.articles))
     .catch(error => console.log(error));
