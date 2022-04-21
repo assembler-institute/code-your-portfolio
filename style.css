@@ -38,16 +38,8 @@ p {
   font-size: 1.2em;
 }
 
-.container-h2__right {
+h2 {
   text-align: center;
-}
-
-.bg-red{
-  background-color: red;
-  color:white;
-}
-
-.highlight {
   color: rgb(255, 28, 3);
   border: 6px solid red;
   border-radius: 50px;
@@ -56,7 +48,12 @@ p {
   margin: 10px auto;
 }
 
-.bg-red .highlight {
+.bg-red{
+  background-color: red;
+  color:white;
+}
+
+.bg-red h2 {
   color: white;
   border: 6px solid white;
   border-radius: 50px;
@@ -385,14 +382,6 @@ figcaption {
   padding:3em;
 }
 
-.container-form--title {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 36px;
-  line-height: 48px;
-}
-
 .contact-form{
   margin-top:2em;
 }
@@ -570,9 +559,11 @@ figcaption {
     -ms-user-select: none;
     user-select: none;
   }
+
   .hamburger.is-active {
     background-color: none;
   }
+
   ._layer {
     background: #333333;
     margin-bottom: 4px;
@@ -585,32 +576,39 @@ figcaption {
     -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
   }
+
   .hamburger:hover .-top {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
   }
+
   .hamburger:hover .-bottom {
     -webkit-transform: translateY(100%);
     -ms-transform: translateY(100%);
     transform: translateY(100%);
   }
+
   .hamburger.is-active .-top {
     -webkit-transform: translateY(200%) rotate(45deg) !important;
     -ms-transform: translateY(200%) rotate(45deg) !important;
     transform: translateY(200%) rotate(45deg) !important;
   }
+
   .hamburger.is-active .-mid {
     opacity: 0;
   }
+
   .hamburger.is-active .-bottom {
     -webkit-transform: translateY(-200%) rotate(135deg) !important;
     -ms-transform: translateY(-200%) rotate(135deg) !important;
     transform: translateY(-200%) rotate(135deg) !important;
   }
+
   .navbar.is_active {
     transform: translate3d(0px, 0px, 0px);
   }
+
   .navbar {
     display: flex;
     position: fixed;
@@ -626,12 +624,15 @@ figcaption {
     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
     z-index: 1001;
   }
+
   .navbar a {
     text-decoration: none;
     color: black;
   }
+
   .navbar a:hover {
     text-decoration: none;
     color: #333;
   }
+  
 }
