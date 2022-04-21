@@ -16,6 +16,8 @@ function changeMarioDisplay() {
 
 /* FETCH DATA FROM API */
 
+/*
+
 // option 1
 function fetchNews(obj) {
 
@@ -69,6 +71,7 @@ fetchNews((data) => { // here we pass the data to the function
         `;
   });
 });
+*/
 
 /*Burger menu*/
 // Selector
