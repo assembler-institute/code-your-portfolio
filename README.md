@@ -8,7 +8,7 @@ En esta presentación vamos a plantear un acercamiento básico al desarrollo web
 
 Para poder explicar a fondo esta materia, hemos elaborado una presentación:
 
-IMAGEN QR
+https://docs.google.com/presentation/d/1SzFIDVPl-zMNeB9T3SfaWnxqRpAEtAmEonpBrY1igpU/edit?usp=sharing
 
 <hr>
 
