@@ -27,25 +27,20 @@ h2 {
   font-size: 38px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  margin: 0px 0 25px 0;
+  color: rgb(255, 28, 3);
+  border: 6px solid red;
+  border-radius: 50px;
   text-align: center;
   text-transform: capitalize;
+  padding: 0px 10px;
+  margin: 10px auto;
+  width: fit-content;
 }
 
 p {
   text-align: justify;
   line-height: 24px;
   font-size: 1.2em;
-}
-
-h2 {
-  text-align: center;
-  color: rgb(255, 28, 3);
-  border: 6px solid red;
-  border-radius: 50px;
-  width: fit-content;
-  padding: 5px 10px;
-  margin: 10px auto;
 }
 
 .bg-red{
