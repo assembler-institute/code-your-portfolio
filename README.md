@@ -4,11 +4,9 @@
 
 ## ¡Os damos la bienvenida!
 
-En esta presentación vamos a plantear un acercamiento básico al desarrollo web mediante HTML, CSS y JavaScript. Estos tres lenguajes proporcionan a nuestra web estructura (HTML), estilos (CSS) e interacción con el usuario y automatizaciones (JavaScript).
+En esta presentación vamos a plantear un acercamiento básico al desarrollo web mediante HTML y CSS. Al final de la sesión también os dejaremos un contenido de JavaScript para que podáis profundizar en esta materia. Estos tres lenguajes proporcionan a nuestra web estructura (HTML), estilos (CSS) e interacción con el usuario y automatizaciones (JavaScript).
 
-Para poder explicar a fondo esta materia, hemos elaborado una presentación:
-
-https://docs.google.com/presentation/d/1SzFIDVPl-zMNeB9T3SfaWnxqRpAEtAmEonpBrY1igpU/edit?usp=sharing
+Para poder explicar a fondo esta materia, hemos elaborado una presentación: bit.ly/assembler-institute-code-your-portfolio
 
 <hr>
 
@@ -16,16 +14,16 @@ https://docs.google.com/presentation/d/1SzFIDVPl-zMNeB9T3SfaWnxqRpAEtAmEonpBrY1i
 
 Esperamos que os haya gustado la primera parte de esta presentación. Ahora, ¡manos a la obra!
 
-En primer lugar tenéis que repartiros por grupos, y elegir un personaje para el que queráis hacer un portfolio. Pensad en uno que tenga suficiente personalidad como para completar todas las secciones de la plantilla, y que conozcáis todos los integrantes del equipo.
+En primer lugar os ubicaremos por parejas, y debéis elegir un personaje para el que queráis hacer un portfolio. Pensad en uno que tenga suficiente personalidad como para completar todas las secciones de la plantilla, y que ambos integrantes conozcáis.
 
 ### **HTML**
 
-A continuación tendréis que descargar la plantilla de HTML sobre la que trabajar. Podéis hacerlo desde el siguiente [link](). 
+A continuación tendréis que descargar la plantilla de HTML sobre la que trabajar. Podéis hacerlo desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/01-html-template/index.html). 
 
 Los requerimientos mínimos de esta sección son:
-- Modifica los textos actuales por unos nuevos que encajen con tu personaje.
-- Cambia las imágenes 
-- Comenta por completo el bloque de Mario saliendo de una tubería.
+- Modificad los textos actuales por unos nuevos que encajen con vuestro personaje.
+- Cambiad las imágenes 
+- Comentad por completo el bloque de Mario saliendo de una tubería.
 
 Una vez completados estos puntos podéis modificar como consideréis el HTML para adaptarlo a lo que queréis que sea vuestro portfolio.
 
@@ -37,14 +35,14 @@ Para más información sobre HTML podéis consultar los siguientes enlaces:
 - [HTML tags (W3Schools)](https://www.w3schools.com/TAgs/default.asp)
 - [HTML <img> Tag (W3Schools)](https://www.w3schools.com/tags/tag_img.asp)
 
-Al acabar, ¡volvemos a la presentación, toca ver CSS!
+Al acabar, ¡volvemos a la presentación, ahora toca ver CSS!
 
 ### **CSS**
 
-Ha llegado el momento de aplicar estilos a vuestra web. Descargad la plantilla desde el siguiente [link]() para adaptar los estilos (colores, espacios y tamaños, etc.) de vuestro portfolio.
+Ha llegado el momento de aplicar estilos a vuestra web. Descargad la plantilla desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/02-css-template/style.css) para adaptar los estilos (colores, espacios y tamaños, etc.) de vuestro portfolio.
 
 Los requisitos para completar esta sección son los siguientes:
-- Cambiar los colores de todos los elementos de la web que ya tengan alguno en la plantilla para que casen bien con el personaje que habéis elegido.
+- Cambiad los colores de todos los elementos de la web que ya tengan alguno en la plantilla para que casen bien con el personaje que habéis elegido.
 - Ajustar las imágenes que hayáis seleccionado para que se vean correctamente, cambiando su tamaño (siempre desde CSS) o añadiéndoles alguna propiedad que os ayude a mostrar el contenido que queréis.
 - También podéis ajustar el espaciado entre los diferentes elementos de vuestra página para que encajen con el estilo que buscáis.
 
@@ -55,24 +53,6 @@ Os proporcionamos también algo de documentación extra:
 - [CSS (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/CSS)
 - [CSS colors (W3Schools)](https://www.w3schools.com/css/css_colors.asp)
 - [CSS Styling Images (W3Schools)](https://www.w3schools.com/css/css3_images.asp)
-
-Una vez acabemos, volvemos a la presentación para ver el último bloque: ¡JavaScript!
-
-### **JavaScript**
-
-¡Ahora hay que integrar JavaScript! Podéis descargar la plantilla desde el siguiente [link]().
-
-En esta parte encontraréis ya hecho el menú "hamburguesa" para que, cuando el tamaño de la pantalla cambie, el menú superior desaparezca y puedan consultarse las secciones de la web con un menú desplegable. Podéis comentar este código e intentar hacerlo de cero, como una forma de poner en práctica los conocimientos que hemos visto hasta ahora, siguiendo nuestro ejemplo.
-
-Además, os proponemos como reto que, cuando un usuario pase el ratón por encima de la imagen de cabecera de la web, la imagen cambie por otra, o se anime de alguna forma. **PISTA**: Podéis tomar como ejemplo el código (tanto HTML, como CSS y JS) del bloque de la tubería por la que sale Mario en la plantilla.
-
-### Recursos
-
-Como documentación a consultar para empezar a conocer más información sobre JavaScript:
-
-- [JavaScript (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [JavaScript DOM (MDN Web docs)](https://developer.mozilla.org/es/docs/Glossary/DOM)
-- [element.classList() (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/API/Element/classList)
 
 ## ¡Subid vuestro resultado!
 
@@ -87,3 +67,21 @@ Si subís vuestra web, ¡no olvidéis compartirla con nosotros! Nos encantará v
 ## ¡Enhorabuena!
 
 Habéis completado nuestro reto, ya habéis dado vuestros primeros pasos en la programación web. Recordad que podéis contactar con nosotros para cualquier duda, y encontrarnos en nuestra página: [assemblerinstitute.com](https://assemblerinstitute.com/).
+
+### **JavaScript**
+
+Una vez acabemos, os dejamos un bloque adicional para que veáis por vuestra cuenta el último bloque: ¡JavaScript!
+
+¿Cómo integrarlo? Descargad la plantilla desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/03-js-template/script.js).
+
+En esta parte encontraréis ya hecho el menú "hamburguesa" para que, cuando el tamaño de la pantalla cambie, el menú superior desaparezca y puedan consultarse las secciones de la web con un menú desplegable. Podéis comentar este código e intentar hacerlo de cero, como una forma de poner en práctica los conocimientos que hemos visto hasta ahora, siguiendo nuestro ejemplo.
+
+Además, os proponemos como reto que, cuando un usuario pase el ratón por encima de la imagen de cabecera de la web, la imagen cambie por otra, o se anime de alguna forma. **PISTA**: Podéis tomar como ejemplo el código (tanto HTML, como CSS y JS) del bloque de la tubería por la que sale Mario en la plantilla.
+
+### Recursos
+
+Como documentación a consultar para empezar a conocer más información sobre JavaScript:
+
+- [JavaScript (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [JavaScript DOM (MDN Web docs)](https://developer.mozilla.org/es/docs/Glossary/DOM)
+- [element.classList() (MDN Web docs)](https://developer.mozilla.org/es/docs/Web/API/Element/classList)
