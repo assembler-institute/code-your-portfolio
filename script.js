@@ -22,7 +22,7 @@ function fetchNews(obj) {
   let options = {
     method: "GET",
     headers: {
-      "x-api-key": "5yIvBgJxKwX0ZSKuxMcK5ZVXXith43l-SNUXXhTiaU4"
+      "x-api-key": "jZLWQ8iNkSZ4ev8ZiQPBmipPMQihSxxAQz8pshUehIQ"
     }
   }
 
