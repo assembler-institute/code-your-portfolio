@@ -6,7 +6,7 @@
 
 En esta presentación vamos a plantear un acercamiento básico al desarrollo web mediante HTML y CSS. Al final de la sesión también os dejaremos un contenido de JavaScript para que podáis profundizar en esta materia. Estos tres lenguajes proporcionan a nuestra web estructura (HTML), estilos (CSS) e interacción con el usuario y automatizaciones (JavaScript).
 
-Para poder explicar a fondo esta materia, hemos elaborado una presentación: bit.ly/assembler-institute-code-your-portfolio
+Para poder explicar a fondo esta materia, hemos elaborado una presentación: [link](bit.ly/assembler-institute-code-your-portfolio)
 
 <hr>
 
@@ -62,11 +62,11 @@ Ahora que habéis terminado vuestro portfolio, queda un último paso para que po
 
 Si subís vuestra web, ¡no olvidéis compartirla con nosotros! Nos encantará ver el resultado, y compartir con otras personas el buen trabajo que habéis hecho en esta sesión. Podéis encontrarnos en [Instagram](https://www.instagram.com/assemblerinstitute/) o [LinkedIn](https://www.linkedin.com/school/assembler-institute-technology), además de ver nuestro contenido en [YouTube](https://www.youtube.com/channel/UCF7Z58Wc9HwLzypyC8ykLYA) para conocernos mejor y adentraros un poco más en el mundo de la programación.
 
-<hr>
-
 ## ¡Enhorabuena!
 
 Habéis completado nuestro reto, ya habéis dado vuestros primeros pasos en la programación web. Recordad que podéis contactar con nosotros para cualquier duda, y encontrarnos en nuestra página: [assemblerinstitute.com](https://assemblerinstitute.com/).
+
+<hr>
 
 ### **JavaScript**
 
