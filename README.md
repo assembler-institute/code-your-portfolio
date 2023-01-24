@@ -58,7 +58,7 @@ Os proporcionamos también algo de documentación extra:
 
 Ahora que habéis terminado vuestro portfolio, queda un último paso para que podáis acceder a él desde la web. Para ello tendréis que registrar una nueva cuenta en [Netlify](https://www.netlify.com/) y subir (hacer deploy) de la carpeta que contiene los archivos. Como ayuda extra os dejamos este [vídeo explicativo](https://www.youtube.com/watch?v=q9AlnqGv8jI).
 
-¿Queréis ver nuestra versión del portfolio? Podéis verla [aquí](https://assembler-code-portfolio.netlify.app/).
+¿Queréis ver nuestra versión del portfolio? Podéis verla [aquí](https://cerulean-brioche-27d0aa.netlify.app).
 
 Si subís vuestra web, ¡no olvidéis compartirla con nosotros! Nos encantará ver el resultado, y compartir con otras personas el buen trabajo que habéis hecho en esta sesión. Podéis encontrarnos en [Instagram](https://www.instagram.com/assemblerinstitute/) o [LinkedIn](https://www.linkedin.com/school/assembler-institute-technology), además de ver nuestro contenido en [YouTube](https://www.youtube.com/channel/UCF7Z58Wc9HwLzypyC8ykLYA) para conocernos mejor y adentraros un poco más en el mundo de la programación.
 
