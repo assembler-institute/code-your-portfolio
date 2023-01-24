@@ -18,7 +18,7 @@ En primer lugar os ubicaremos por parejas, y debéis elegir un personaje para el
 
 ### **HTML**
 
-A continuación tendréis que descargar la plantilla de HTML sobre la que trabajar. Podéis hacerlo desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/01-html-template/index.html). 
+A continuación tendréis que descargar la plantilla de HTML sobre la que trabajar. Podéis hacerlo desde el siguiente [link](https://github.com/assembler-institute/code-your-portfolio/blob/01-html-template/index.html). 
 
 Los requerimientos mínimos de esta sección son:
 - Modificad los textos actuales por unos nuevos que encajen con vuestro personaje.
@@ -39,7 +39,7 @@ Al acabar, ¡volvemos a la presentación, ahora toca ver CSS!
 
 ### **CSS**
 
-Ha llegado el momento de aplicar estilos a vuestra web. Descargad la plantilla desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/02-css-template/style.css) para adaptar los estilos (colores, espacios y tamaños, etc.) de vuestro portfolio.
+Ha llegado el momento de aplicar estilos a vuestra web. Descargad la plantilla desde el siguiente [link](https://github.com/assembler-institute/code-your-portfolio/blob/02-css-template/style.css) para adaptar los estilos (colores, espacios y tamaños, etc.) de vuestro portfolio.
 
 Los requisitos para completar esta sección son los siguientes:
 - Cambiad los colores de todos los elementos de la web que ya tengan alguno en la plantilla para que casen bien con el personaje que habéis elegido.
@@ -72,7 +72,7 @@ Habéis completado nuestro reto, ya habéis dado vuestros primeros pasos en la p
 
 Una vez acabemos, os dejamos un bloque adicional para que veáis por vuestra cuenta el último bloque: ¡JavaScript!
 
-¿Cómo integrarlo? Descargad la plantilla desde el siguiente [link](https://github.dev/assembler-institute/code-your-portfolio/blob/03-js-template/script.js).
+¿Cómo integrarlo? Descargad la plantilla desde el siguiente [link](https://github.com/assembler-institute/code-your-portfolio/blob/03-js-template/script.js).
 
 En esta parte encontraréis ya hecho el menú "hamburguesa" para que, cuando el tamaño de la pantalla cambie, el menú superior desaparezca y puedan consultarse las secciones de la web con un menú desplegable. Podéis comentar este código e intentar hacerlo de cero, como una forma de poner en práctica los conocimientos que hemos visto hasta ahora, siguiendo nuestro ejemplo.
 
