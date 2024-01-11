@@ -17,36 +17,36 @@ function changeMarioDisplay() {
 /* FETCH DATA FROM API */
 
 // option 1
-function fetchNews(obj) {
-
-  let options = {
-    method: "GET",
-    headers: {
-      "x-api-key": "jZLWQ8iNkSZ4ev8ZiQPBmipPMQihSxxAQz8pshUehIQ"
-    }
-  }
-
-  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=8&lang=es", options)
-    .then(response => response.json())
-    .then(data => obj(data.articles))
-    .catch(error => console.log(error));
-}
-
-// option 2 (in case option 1 doesn't work)
 // function fetchNews(obj) {
 
 //   let options = {
 //     method: "GET",
 //     headers: {
-//       "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
+//       "x-api-key": "jZLWQ8iNkSZ4ev8ZiQPBmipPMQihSxxAQz8pshUehIQ"
+//     }
 //   }
+
+//   fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=8&lang=es", options)
+//     .then(response => response.json())
+//     .then(data => obj(data.articles))
+//     .catch(error => console.log(error));
 // }
 
-//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=9&sortBy=publishedAt&language=es", options)
-//   .then(response => response.json())
-//   .then(data => obj(data.articles))
-//   .catch(error => console.log(error));
-// }
+// option 2 (in case option 1 doesn't work)
+function fetchNews(obj) {
+
+  let options = {
+    method: "GET",
+    headers: {
+      "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
+    }
+  }
+
+  fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=9&sortBy=publishedAt&language=es", options)
+    .then(response => response.json())
+    .then(data => obj(data.articles))
+    .catch(error => console.log(error));
+}
 
 // Here we pass the arguments to the fetchNews function
 fetchNews((data) => { // here we pass the data to the function
