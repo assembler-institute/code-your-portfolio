@@ -14,64 +14,6 @@ function changeMarioDisplay() {
   marioBehindPipe.classList.toggle("show-mario");
 }
 
-/* FETCH DATA FROM API */
-
-/*
-
-// option 1
-function fetchNews(obj) {
-
-  let options = {
-    method: "GET",
-    headers: {
-      "x-api-key": "5yIvBgJxKwX0ZSKuxMcK5ZVXXith43l-SNUXXhTiaU4"
-    }
-  }
-
-  fetch("https://api.newscatcherapi.com/v2/search?q='nintendo + mario'&page_size=8&lang=es", options)
-    .then(response => response.json())
-    .then(data => obj(data.articles))
-    .catch(error => console.log(error));
-}
-
-// option 2 (in case option 1 doesn't work)
-// function fetchNews(obj) {
-
-//   let options = {
-//     method: "GET",
-//     headers: {
-//       "X-Api-Key": "eb6297ad56ac4b898639f7b92a7a0243",
-//   }
-// }
-
-//   fetch("https://newsapi.org/v2/everything?q='nintendo + mario'&pageSize=9&sortBy=publishedAt&language=es", options)
-//   .then(response => response.json())
-//   .then(data => obj(data.articles))
-//   .catch(error => console.log(error));
-// }
-
-// Here we pass the arguments to the fetchNews function
-fetchNews((data) => { // here we pass the data to the function
-  let jsondata = data;
-  console.log(jsondata);
-  const newsContainer = document.getElementById("marioNews");
-  Object.keys(jsondata).map(function (key) {
-    let news = jsondata[key];
-    let newsTitle = news.title;
-    // let summary = news.summary;
-    let link = news.link || news.url;
-    let newsImage = news.media || news.urlToImage;
-    newsContainer.innerHTML += `
-        <div class="container-news__image">
-          <a href="${link}" target="_blank">
-            <img src="${newsImage}" alt="${newsTitle}">
-            <p>${newsTitle}</p>
-          </a>
-        </div>
-        `;
-  });
-});
-*/
 
 /*Burger menu*/
 // Selector
