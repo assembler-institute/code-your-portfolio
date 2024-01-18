@@ -72,7 +72,7 @@ Habéis completado nuestro reto, ya habéis dado vuestros primeros pasos en la p
 
 Una vez acabemos, os dejamos un bloque adicional para que veáis por vuestra cuenta el último bloque: ¡JavaScript!
 
-¿Cómo integrarlo? Descargad la plantilla desde el siguiente [link](https://github.com/assembler-institute/code-your-portfolio/blob/03-js-template/script.js).
+¿Cómo integrarlo? Descargad la plantilla desde el siguiente [link](https://github.com/assembler-institute/code-your-portfolio/blob/03-js-template/index.js).
 
 En esta parte encontraréis ya hecho el menú "hamburguesa" para que, cuando el tamaño de la pantalla cambie, el menú superior desaparezca y puedan consultarse las secciones de la web con un menú desplegable. Podéis comentar este código e intentar hacerlo de cero, como una forma de poner en práctica los conocimientos que hemos visto hasta ahora, siguiendo nuestro ejemplo.
 
