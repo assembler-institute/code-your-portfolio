@@ -6,7 +6,7 @@
 
 En esta presentación vamos a plantear un acercamiento básico al desarrollo web mediante HTML y CSS. Al final de la sesión también os dejaremos un contenido de JavaScript para que podáis profundizar en esta materia. Estos tres lenguajes proporcionan a nuestra web estructura (HTML), estilos (CSS) e interacción con el usuario y automatizaciones (JavaScript).
 
-Para poder explicar a fondo esta materia, hemos elaborado una presentación: [link]([https://docs.google.com/presentation/d/1gdPKCbsBYzG2BgYqKqivz04b7GFPKSsIWOEdRpc61wk/edit?usp=sharing](https://docs.google.com/presentation/d/1qrUbUwx2kdq5Fm8HRTuSq6mPPl8hbXgtlN876vfgQVY))
+Para poder explicar a fondo esta materia, hemos elaborado una presentación: [link](https://docs.google.com/presentation/d/1qrUbUwx2kdq5Fm8HRTuSq6mPPl8hbXgtlN876vfgQVY)
 
 <hr>
 
